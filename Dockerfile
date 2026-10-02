@@ -2,7 +2,10 @@ FROM python:3.11-slim
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    APP_ENV=production
+    APP_ENV=production \
+    PORT=7860
+
+EXPOSE 7860
 
 WORKDIR /app
 

@@ -567,6 +567,30 @@ class TelegramAgent:
 
         self.bot = Bot(token=self.bot_token)
         print(f"[OK] Telegram Bot connecting with allowlist: {self.allowed_user_ids}...")
+
+        # Optional web server for zero-card platforms (Render, Koyeb, HuggingFace Spaces)
+        port_env = os.environ.get("PORT")
+        web_runner = None
+        if port_env:
+            try:
+                from aiohttp import web
+                web_app = web.Application()
+                async def handle_health(request):
+                    return web.Response(
+                        text="{\"status\":\"healthy\",\"bot\":\"Halal SIP AI Bot\",\"service\":\"24/7 Active\"}",
+                        content_type="application/json",
+                        status=200
+                    )
+                web_app.router.add_get("/", handle_health)
+                web_app.router.add_get("/health", handle_health)
+                web_runner = web.AppRunner(web_app)
+                await web_runner.setup()
+                port = int(port_env)
+                site = web.TCPSite(web_runner, "0.0.0.0", port)
+                await site.start()
+                print(f"[OK] Web health service listening on 0.0.0.0:{port} for 24/7 cloud hosting!")
+            except Exception as e:
+                logger.warning(f"Could not bind web health check on port {port_env}: {e}")
         
         # Start background market sync and auto-notification loop
         scheduler_task = asyncio.create_task(self._scheduler_loop())
@@ -574,4 +598,7 @@ class TelegramAgent:
             await self.dp.start_polling(self.bot)
         finally:
             scheduler_task.cancel()
+            if web_runner:
+                await web_runner.cleanup()
             await self.bot.session.close()
+

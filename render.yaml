@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: halal-sip-ai-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && python scripts/initialize.py"
+    startCommand: "python scripts/run_telegram_bot.py"
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_ALLOWED_USER_IDS
+        value: "1389004693,6662391660"
+      - key: GROQ_API_KEY
+        sync: false
