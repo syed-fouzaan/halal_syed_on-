@@ -1,0 +1,152 @@
+[
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Infosys Ltd.",
+    "isin": "INE009A01021",
+    "sector": "Information Technology",
+    "weight_pct": 8.45,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Tata Consultancy Services Ltd.",
+    "isin": "INE467B01029",
+    "sector": "Information Technology",
+    "weight_pct": 7.82,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "HCL Technologies Ltd.",
+    "isin": "INE860A01027",
+    "sector": "Information Technology",
+    "weight_pct": 6.15,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Sun Pharmaceutical Industries Ltd.",
+    "isin": "INE044A01036",
+    "sector": "Healthcare & Pharma",
+    "weight_pct": 5.92,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Maruti Suzuki India Ltd.",
+    "isin": "INE585B01010",
+    "sector": "Automobile & Ancillaries",
+    "weight_pct": 5.1,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Tata Consumer Products Ltd.",
+    "isin": "INE192A01025",
+    "sector": "FMCG",
+    "weight_pct": 4.88,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Cipla Ltd.",
+    "isin": "INE059A01026",
+    "sector": "Healthcare & Pharma",
+    "weight_pct": 4.35,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Tech Mahindra Ltd.",
+    "isin": "INE669C01036",
+    "sector": "Information Technology",
+    "weight_pct": 3.9,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Larsen & Toubro Technology Services",
+    "isin": "INE010V01017",
+    "sector": "Information Technology",
+    "weight_pct": 3.65,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Ultratech Cement Ltd.",
+    "isin": "INE481G01011",
+    "sector": "Materials / Cement",
+    "weight_pct": 3.42,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Torrent Pharmaceuticals Ltd.",
+    "isin": "INE685A01028",
+    "sector": "Healthcare & Pharma",
+    "weight_pct": 3.1,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Pidilite Industries Ltd.",
+    "isin": "INE318A01026",
+    "sector": "Chemicals",
+    "weight_pct": 2.95,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Havells India Ltd.",
+    "isin": "INE176B01034",
+    "sector": "Consumer Durables",
+    "weight_pct": 2.8,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Dixon Technologies (India) Ltd.",
+    "isin": "INE935N01020",
+    "sector": "Consumer Electronics",
+    "weight_pct": 2.65,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  },
+  {
+    "snapshot_id": "TATA_ETHICAL_GROWTH_DIRECT_2026-10-02",
+    "fund_id": "TATA_ETHICAL_GROWTH_DIRECT",
+    "report_date": "2026-10-02",
+    "company_name": "Bharat Electronics Ltd.",
+    "isin": "INE263A01024",
+    "sector": "Capital Goods / Defence",
+    "weight_pct": 2.5,
+    "source": "OFFICIAL_AMC_DISCLOSURE"
+  }
+]

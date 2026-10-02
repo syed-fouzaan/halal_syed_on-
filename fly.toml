@@ -1,0 +1,23 @@
+# fly.toml app configuration file for Halal SIP AI
+# Reference: https://fly.io/docs/reference/configuration/
+
+app = 'halal-sip-ai-bot'
+primary_region = 'bom'
+
+[build]
+  dockerfile = 'Dockerfile'
+
+[env]
+  PYTHONUNBUFFERED = '1'
+  APP_ENV = 'production'
+  DATA_DIR = '/app/data'
+  DEFAULT_AI_PROVIDER = 'pollinations'
+
+[mounts]
+  source = 'halal_sip_data'
+  destination = '/app/data'
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '512mb'
+  cpus = 1

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-02T19:53:12.898755",
+  "tool": "Reticle Runtime Perception Engine v3.5.0",
+  "target": "Halal SIP AI",
+  "overall_status": "VERIFIED",
+  "checks_total": 7,
+  "checks_verified": 7,
+  "verdicts": [
+    {
+      "id": "RET-01",
+      "verdict": "VERIFIED",
+      "evidence": "Found 6 tables: ['documents', 'funds', 'nav_history', 'portfolio_holdings', 'shariah_checks', 'transactions']. Missing: []"
+    },
+    {
+      "id": "RET-02",
+      "verdict": "VERIFIED",
+      "evidence": "app.py bytecode clean compilation with zero syntax/import errors."
+    },
+    {
+      "id": "RET-03",
+      "verdict": "VERIFIED",
+      "evidence": "U=0.0 * N=395.7253 => Calculated V=0.0, Expected V=0.0"
+    },
+    {
+      "id": "RET-04",
+      "verdict": "VERIFIED",
+      "evidence": "XIRR solved successfully to rate: None (0%)"
+    },
+    {
+      "id": "RET-05",
+      "verdict": "VERIFIED",
+      "evidence": "Screened 60 holdings against prohibited sectors. Violations: 0"
+    },
+    {
+      "id": "RET-06",
+      "verdict": "VERIFIED",
+      "evidence": "All 1 documents carry verified 64-char hexadecimal SHA-256 signatures."
+    },
+    {
+      "id": "RET-07",
+      "verdict": "VERIFIED",
+      "evidence": "Zero credentials/tokens stored in database; local isolation verified."
+    }
+  ]
+}

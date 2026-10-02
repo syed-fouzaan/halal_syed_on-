@@ -1,0 +1,23 @@
+## Scheme Information Document (SID) - Tata Ethical Fund
+    ### Investment Objective & Shariah Mandate
+    The investment objective of the scheme is to provide medium to long-term capital appreciation by investing in a diversified portfolio of Shariah-compliant equities.
+    The fund invests strictly in securities that are part of the Shariah universe as screened by an independent Shariah Advisory Board and benchmarked to Nifty 500 Shariah TRI.
+
+    ### Prohibited Business Activities
+    The fund shall not invest in companies involved in:
+    1. Conventional banking, insurance, or interest-based financial institutions (Riba).
+    2. Manufacture, sale, or distribution of alcoholic beverages or breweries.
+    3. Production, packaging, or trading of pork and non-halal meat products.
+    4. Gambling, gaming casinos, or lottery operations.
+    5. Adult entertainment, pornography, or non-permissible media.
+    6. Tobacco products and offensive military weapons.
+
+    ### Financial Screening Ratios
+    Companies passing the business activity screens must also satisfy the following financial thresholds:
+    - Debt ratio: Total interest-bearing debt divided by 24-month average market capitalization must be less than 33%.
+    - Cash ratio: Total cash, interest-bearing deposits, and marketable securities divided by 24-month average market capitalization must be less than 33%.
+    - Non-permissible revenue: Ancillary interest or non-compliant revenue must not exceed 5% of total gross revenue.
+
+    ### Dividend Purification Mechanism
+    Any incidental income from interest earned by portfolio companies on bank deposits must be purified.
+    The AMC computes the purification factor semi-annually and advises unitholders on the exact percentage (typically 1.2% - 1.5%) to donate to recognized charities without seeking tax deduction.

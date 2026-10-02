@@ -1,0 +1,62 @@
+app:
+  name: "Halal SIP AI"
+  version: "1.0.0"
+  currency: "INR"
+  timezone: "Asia/Kolkata"
+
+database:
+  path: "data/database/halal_sip.duckdb"
+  parquet_dir: "data/processed"
+
+fund:
+  fund_id: "TATA_ETHICAL_GROWTH_DIRECT"
+  scheme_name: "Tata Ethical Fund - Direct Plan - Growth"
+  amc_name: "Tata Asset Management Limited"
+  category: "Equity - Thematic (Shariah Compliant)"
+  benchmark: "Nifty 500 Shariah TRI"
+  plan: "Direct"
+  option: "Growth"
+  isin: "INF277K01NG4"
+  amfi_code: "119172"
+  expense_ratio: 0.88
+  riskometer: "Very High"
+  aum_cr: 2540.50
+
+sip:
+  amount: 2000
+  frequency: "monthly"
+  day_of_month: 5
+  annual_step_up_percent: 10
+  start_date: "2024-01-05"
+  active: true
+
+sources:
+  amfi_nav_url: "https://www.amfiindia.com/spages/NAVAll.txt"
+  mfapi_nav_url: "https://api.mfapi.in/mf/119172"
+  amc_portal_url: "https://www.tatamutualfund.com"
+  timeout_seconds: 15
+
+ai:
+  runtime: "ollama"
+  host: "http://127.0.0.1:11434"
+  model: "llama3"
+  fallback_model: "qwen2.5"
+  temperature: 0.1
+  embedding_model: "nomic-embed-text"
+
+storage:
+  raw_nav_dir: "data/raw/nav"
+  raw_portfolio_dir: "data/raw/portfolio"
+  raw_documents_dir: "data/raw/fund_documents"
+  raw_shariah_dir: "data/raw/shariah"
+  processed_nav_dir: "data/processed/nav"
+  processed_portfolio_dir: "data/processed/portfolio"
+  processed_documents_dir: "data/processed/documents"
+  monthly_reports_dir: "reports/monthly"
+  audit_reports_dir: "reports/audit"
+
+telegram:
+  bot_token: "" # Set via TELEGRAM_BOT_TOKEN environment variable or here
+  allowed_user_ids: [123456789] # Allowlist of Telegram user IDs
+  polling_timeout: 30
+  notifications_enabled: true

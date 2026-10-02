@@ -1,0 +1,25 @@
+{
+  "projectId": "3a0b3c05-af05-4661-bc32-d3b48fe873f0",
+  "type": "frontend",
+  "name": "Shariah Compliance and Data Lineage Audit",
+  "description": "Validates that all screened holdings adhere strictly to Shariah guidelines, document hashes exist, and data quality checks return PASS.",
+  "priority": "p1",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to the Data Quality & Lineage tab"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that Overall Integrity Status badge displays PASS or WARNING and zero FAIL status"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that the detailed verification table contains checks for fund_metadata, duplicate_transactions, numeric_fields, unit_balance, and document_hashes"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that the Mermaid data lineage graph is rendered showing unidirectional flow from official sources to DuckDB to calculations"
+    }
+  ]
+}

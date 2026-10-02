@@ -1,0 +1,50 @@
+{
+  "suite": "Reticle Runtime Perception & Verification",
+  "target": "Halal SIP AI Application",
+  "version": "1.0.0",
+  "checks": [
+    {
+      "id": "RET-01",
+      "name": "Database Connection & Schema Existence",
+      "type": "state",
+      "expected": "Tables [funds, transactions, nav_history, portfolio_holdings, documents, shariah_checks] exist in DuckDB"
+    },
+    {
+      "id": "RET-02",
+      "name": "Console Error Cleanliness",
+      "type": "console",
+      "expected": "Zero unhandled runtime exceptions or console errors"
+    },
+    {
+      "id": "RET-03",
+      "name": "Deterministic Valuation Invariant",
+      "type": "invariant",
+      "formula": "V == Units * NAV",
+      "expected": "Current portfolio value exactly equals total units multiplied by latest valid NAV"
+    },
+    {
+      "id": "RET-04",
+      "name": "XIRR Convergence & Bounds",
+      "type": "invariant",
+      "expected": "XIRR root finder converges within 100 iterations with tolerance < 1e-5"
+    },
+    {
+      "id": "RET-05",
+      "name": "Shariah Screening Negative List",
+      "type": "access_control",
+      "expected": "Zero portfolio companies match prohibited sectors (banks, alcohol, pork, gambling, adult media, tobacco)"
+    },
+    {
+      "id": "RET-06",
+      "name": "Data Lineage Cryptographic Hashes",
+      "type": "provenance",
+      "expected": "Every document and NAV batch carries a valid 64-character hexadecimal SHA-256 hash"
+    },
+    {
+      "id": "RET-07",
+      "name": "Zero-Knowledge Local Boundary",
+      "type": "security",
+      "expected": "Zero storage of passwords, OTPs, PINs, or credentials; local AI bound to 127.0.0.1"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "projectId": "3a0b3c05-af05-4661-bc32-d3b48fe873f0",
+  "type": "frontend",
+  "name": "Halal SIP AI Dashboard End-to-End User Journey",
+  "description": "Validates the full user journey: metrics inspection, transaction entry, Shariah compliance status, and evidence citations in the local Streamlit UI.",
+  "priority": "p1",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to the Halal SIP AI dashboard homepage"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that 'Halal SIP AI' header and 'Open, Local-First, Zero-Cost' subtitle are visibly rendered"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that Portfolio Value, Total Invested, Total Return %, and Annualized XIRR metric cards are present and populated with non-zero currency values"
+    },
+    {
+      "type": "action",
+      "description": "Click on the '💼 Portfolio & Ledger' tab"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that the transaction history table displays historical SIP transactions with dates, units, and NAVs"
+    },
+    {
+      "type": "action",
+      "description": "Fill out the transaction form with Type 'SIP', Amount 2000, and click 'Record Transaction'"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that a success confirmation appears and the ledger refreshes"
+    },
+    {
+      "type": "action",
+      "description": "Click on the '⚖️ Shariah & Governance' tab"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that 'Zero Prohibited Sector Violations Detected' success banner is visible"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that the Dividend Purification Calculator is interactive and displays calculated charity deduction"
+    },
+    {
+      "type": "action",
+      "description": "Click on the '🤖 Local AI Assistant' tab"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert that evidence-based RAG UI is accessible and warns gracefully if local Ollama daemon is offline without crashing financial calculations"
+    }
+  ]
+}

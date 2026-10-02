@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caches and testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.parquet.tmp
+*.log
+
+# Environments & Private Tokens (CRITICAL SECURITY GUARDRAILS)
+.env
+.env.*
+*.env
+.venv/
+venv/
+ENV/
+.streamlit/secrets.toml
+config/config.yaml
+
+# Local Financial Database (Zero-Leakage Guarantee)
+data/database/*.duckdb
+*.duckdb
+*.duckdb.wal
+
+# Generated Personal Financial Reports (.xlsx, .pdf, .html)
+reports/monthly/*.pdf
+reports/monthly/*.html
+reports/monthly/*.xlsx
+reports/**/*.xlsx
+reports/**/*.pdf
+
+# Fly.io & OS metadata
+.fly/
+.DS_Store
+Thumbs.db
